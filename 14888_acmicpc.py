@@ -14,7 +14,6 @@ def dfs(plus, minus, mul, div, values, idx, total,N):
         mx = max(mx,total)
         mn = min(mn,total)
         return
-
     if(plus>0):
         dfs(plus-1,minus,mul,div,values,idx+1,total+values[idx+1],N)
     if(minus>0):
